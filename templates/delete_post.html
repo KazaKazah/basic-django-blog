@@ -2,11 +2,11 @@
 
 {% block content %}
 
-<h2>Are you sure?</h2>
+<h2>Вы уверены что хотите удалить?</h2>
 <form method="post">
     {% csrf_token %}
     <input class="btn btn-danger" type="submit" value="Delete">
-    <a type="button" class="btn" href="{% url 'index' %}">Go back</a>
+    <a type="button" class="btn" href="{% url 'index' %}">Возврат назад</a>
 </form>
 
 

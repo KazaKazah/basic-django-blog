@@ -3,10 +3,10 @@
 {% block content %}
 
 {% if edit_mode %}
-<h1>Edit Post</h1>
-<a type="button" class="btn btn-primary" href="{% url 'delete' post.slug %}">Delete</a>
+<h1>Редактирование</h1>
+<a type="button" class="btn btn-primary" href="{% url 'delete' post.slug %}">Удаление</a>
 {% else %}
-<h1>Add Post</h1>
+<h1>Добавить запись</h1>
 {% endif %}
 
 <div class="container">

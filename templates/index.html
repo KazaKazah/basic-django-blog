@@ -7,10 +7,10 @@
 {% elif category_name %}
 <h1>Category: {{category_name}}</h1>
 {% else %}
-<h1>All Posts</h1>
+<h1>Все записи</h1>
 {% endif %}
 
-<a type="button" class="btn btn-primary" href="{% url 'add_post' %}">New</a>
+<a type="button" class="btn btn-primary" href="{% url 'add_post' %}">Новая запись</a>
 
 
 <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
@@ -36,7 +36,7 @@
 
     {% else %}
 
-    <p>No posts to display!</p>
+    <p>Нет записей для отображения</p>
 
     {% endif %}
 

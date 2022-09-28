@@ -11,7 +11,7 @@
 <h1>{{post.title}}</h1>
 
 {% if post.published_date %}
-<small>Published {{post.published_date}}</small>
+<small>опубликовано {{post.published_date}}</small>
 {% endif %}
 
 {% if post.feature_image %}
@@ -27,9 +27,9 @@
 <p>{{post.body | safe}}</p>
 
 {% if post.status == 'draft' %}
-<a type="button" class="btn btn-primary" href="{% url 'publish' post.slug %}">Publish</a>
+<a type="button" class="btn btn-primary" href="{% url 'publish' post.slug %}">опубликовать</a>
 {% else %}
-<a type="button" class="btn btn-primary" href="{% url 'edit' post.slug %}">Edit</a>
+<a type="button" class="btn btn-primary" href="{% url 'edit' post.slug %}">редактировать</a>
 
 {% endif %}
 
