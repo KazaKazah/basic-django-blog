@@ -56,7 +56,7 @@ class Post(models.Model):
         max_length=20, choices=STATUS_CHOICES, default="draft")
 
     body = models.TextField(
-        verbose_name='описнаие'
+        verbose_name='описание'
     )
 
     created_date = models.DateTimeField(auto_now_add=True, verbose_name='дата создания')
